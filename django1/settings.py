@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-c5kub$&$y0(i34@u91un)sp=^k#+q@jqo)iqyxv$nwt2(k)3_2
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-#debug com valor true = modo em desenvolvilento (usa o static), se for false é para modo produção (usa o staticfiles)
+#debug com valor true = modo em desenvolvimento (usa o static), se for false é para modo produção (usa o staticfiles)
 DEBUG = False
 
 ALLOWED_HOSTS = ['*'] #colocar o url quando tiver um para poder publicar
