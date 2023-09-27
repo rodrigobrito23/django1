@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-c5kub$&$y0(i34@u91un)sp=^k#+q@jqo)iqyxv$nwt2(k)3_2
 #debug com valor true = modo em desenvolvimento (usa o static), se for false é para modo produção (usa o staticfiles)
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django1-rbf2-1039b6abcfac.herokuapp.com/'] #colocar o url quando tiver um para poder publicar
+ALLOWED_HOSTS = ['*'] #colocar o url quando tiver um para poder publicar
 
 
 # Application definition
@@ -126,7 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/' #usado durante o desenvolvimento
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'), ]
 
 LOGOUT_REDIRECT_URL = 'index'
 
