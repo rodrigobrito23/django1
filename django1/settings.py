@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import django_heroku
+
 import os
 
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,9 +31,9 @@ SECRET_KEY = 'django-insecure-c5kub$&$y0(i34@u91un)sp=^k#+q@jqo)iqyxv$nwt2(k)3_2
 # SECURITY WARNING: don't run with debug turned on in production!
 
 #debug com valor true = modo em desenvolvimento (usa o static), se for false é para modo produção (usa o staticfiles)
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*'] #colocar o url quando tiver um para poder publicar
+ALLOWED_HOSTS = ['https://django1-rbf2-1039b6abcfac.herokuapp.com/'] #colocar o url quando tiver um para poder publicar
 
 
 # Application definition
