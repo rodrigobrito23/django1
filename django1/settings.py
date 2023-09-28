@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-c5kub$&$y0(i34@u91un)sp=^k#+q@jqo)iqyxv$nwt2(k)3_2
 # SECURITY WARNING: don't run with debug turned on in production!
 
 #debug com valor true = modo em desenvolvimento (usa o static), se for false é para modo produção (usa o staticfiles)
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*'] #colocar o url quando tiver um para poder publicar
 
@@ -48,7 +48,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoise.Middleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
