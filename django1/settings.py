@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-c5kub$&$y0(i34@u91un)sp=^k#+q@jqo)iqyxv$nwt2(k)3_2
 # SECURITY WARNING: don't run with debug turned on in production!
 
 #debug com valor true = modo em desenvolvimento (usa o static), se for false é para modo produção (usa o staticfiles)
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*'] #colocar o url quando tiver um para poder publicar
 
@@ -122,12 +122,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/' #usado durante o desenvolvimento
+STATIC_URL = '/static/' #usado durante o desenvolvimento
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
 
 #STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'), ]
 
